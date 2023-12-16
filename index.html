@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CastPress - Main</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="Learn English online using our high-quality resources to quickly improve your English. Take our free level test to help you find your English language level, then find lessons and resources that are just right for you.">
+	<link rel = "icon" type = "image/x-icon" href = "favicon.ico">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+	<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link
+	  rel="stylesheet"
+	  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	<link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body data-aos="fade-right">
+	<header class='main-header'>
+		<nav class="navbar navbar-expand-lg navbar-light header-wrap ">
+		  <div class="container-fluid">
+		    <a class="navbar-brand" href="index.html">
+		    	<img src="images/logo.svg" alt="">
+		    </a>
+		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		      <span class="navbar-toggler-icon"></span>
+		    </button>
+		    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		      <ul class="navbar-nav">
+		        <li class="nav-item dropdown">
+		          <a class="nav-link dropdown-toggle uppercase" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+		            Episodes
+		          </a>
+		          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+		            <li><a class="dropdown-item" href="digital-detox-podcast.html">A digital detox podcast</a></li>
+		            <li><a class="dropdown-item" href="https://learnenglish.britishcouncil.org/general-english/audio-series/writing-home/episode-01">Writing home</a></li>
+		            <li><a class="dropdown-item" href="https://learnenglish.britishcouncil.org/general-english/big-city-small-world/series-1">Big City Small World</a></li>
+		            <li><a class="dropdown-item" href="https://learnenglish.britishcouncil.org/general-english/audio-zone/study-trip-uk">A study trip to the UK</a></li>
+		            <li><a class="dropdown-item" href="https://learnenglish.britishcouncil.org/general-english/audio-zone/beating-stress">Beating stress</a></li>
+		            <li><a class="dropdown-item" href="https://learnenglish.britishcouncil.org/general-english/audio-zone/coventry-city-fc">Coventry City F.C.</a></li>
+		          </ul>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="about.html">About</a>
+		        </li>
+		        <li class="nav-item">
+		          <a id='btn' class="nav-link" href="#">Contact</a>
+		        </li>
+		        <li class="nav-item">
+		          <a class="nav-link" href="https://u24.gov.ua/uk"><i class="fa-regular fa-heart"></i>Donate</a>
+		        </li>
+		        <li class=" search-item">
+		          	<a id='searchBtn' class="nav-link" href="">
+			          	<input class='input hide' type="search" id="searchbox" placeholder="Search for podcast...">
+			          	<i id='searchIcon' class="fa-solid fa-magnifying-glass"></i>
+		        	</a>
+		          	<div id='searchListF' class="my-search-list hide">
+		          		<div class="box">
+							<strong>A digital detox podcast</strong>
+						 	<a href="digital-detox-podcast.html">Episode page</a>
+						</div>
+						<div class="box">
+							<strong>Writing home</strong>
+						 	<a href="https://learnenglish.britishcouncil.org/general-english/audio-series/writing-home/episode-01">Episode page</a>
+						</div>
+						<div class="box">
+							<strong>Big City Small World</strong>
+						 	<a href="https://learnenglish.britishcouncil.org/general-english/big-city-small-world/series-1">Episode page</a>
+						</div>
+						<div class="box">
+							<strong>A study trip to the UK</strong>
+						 	<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/study-trip-uk">Episode page</a>
+						</div>
+						<div class="box">
+							<strong>Beating stress</strong>
+						 	<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/beating-stress">Episode page</a>
+						</div>
+						<div class="box">
+							<strong>Coventry City F.C.</strong>
+						 	<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/coventry-city-fc">Episode page</a>
+						</div>
+		          	</div>
+		          
+		        </li>
+		        
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	</header>
+
+	<div class="content-wrap">
+		<section id='swiper' class="header-section d-flex">
+			<!-- Slider main container -->
+			<div class="swiper" style='width:100%'>
+			  <!-- Additional required wrapper -->
+			  <div class="swiper-wrapper">
+			    <!-- Slides -->
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/header-section.jpg" alt="">
+					</div>
+					<h1 class="header-section-title">
+						A digital detox podcast
+					</h1>
+					<a href="digital-detox-podcast.html" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_B2_Digital_detox_podcast.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/podcast-5.jpg" alt="">
+					</div>
+					<h1 class="header-section-title">
+						Writing home
+					</h1>
+					<a href="https://learnenglish.britishcouncil.org/general-english/audio-series/writing-home/episode-01" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/WritingHomeEpisode01.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/podcast-4.png" alt="">
+					</div>
+					<h1 class="header-section-title">
+						Big City Small World
+					</h1>
+					<a href="https://learnenglish.britishcouncil.org/general-english/big-city-small-world/series-1" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/BCSW-s01-e01.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/podcast-3.jpg" alt="">
+					</div>
+					<h1 class="header-section-title">
+						A study trip to the UK 
+					</h1>
+					<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/study-trip-uk" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/Audio_zone_study_trip_UK.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/podcast-2.jpg" alt="">
+					</div>
+					<h1 class="header-section-title">
+						Beating stress 
+					</h1>
+					<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/beating-stress" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/Audio_zone_Beating_stress.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    <div class="swiper-slide header-section d-flex">
+			    	<div class="header-section-img">
+						<img src="images/podcast-1.jpg" alt="">
+					</div>
+					<h1 class="header-section-title">
+						Coventry City F.C. 
+					</h1>
+					<a href="https://learnenglish.britishcouncil.org/general-english/audio-zone/coventry-city-fc" class="my-btn episode-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+					<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/Audio_zone_Coventry_City.mp3" controls="" style="width:100%" ></audio>
+
+					<div class="share">
+						<div class="share-title">
+							Listen on
+						</div>
+						<div class="share-icons d-flex">
+							<a href="https://open.spotify.com/">
+								<i class="fa-brands fa-spotify"></i>
+							</a>
+							<a href="https://soundcloud.com/">
+								<i class="fa-brands fa-soundcloud"></i>
+							</a>
+							<a href="https://music.apple.com/us/browse">
+								<i class="fa-brands fa-apple"></i>
+							</a>
+						</div>
+					</div>
+			    </div>
+			    
+			  </div>
+			  <!-- If we need pagination -->
+			  <div class="swiper-pagination"></div>
+			</div>
+
+			<!-- <div class="header-section-img">
+				<img src="images/header-section.jpg" alt="">
+			</div>
+			<h1 class="header-section-title">
+				A digital detox podcast
+			</h1>
+			<a href="digital-detox-podcast.html" class="my-btn episode-btn">
+				<i class="fa-solid fa-play"></i>
+				<span>Episode page</span>
+			</a>
+			<audio src="https://6a63fca904fd268f15f7-d5770ffdd579eb31eaa89faeffc55fe7.ssl.cf1.rackcdn.com/LE_listening_B2_Digital_detox_podcast.mp3" controls="" style="width:100%" ></audio>
+
+			<div class="share">
+				<div class="share-title">
+					Listen on
+				</div>
+				<div class="share-icons d-flex">
+					<a href="https://open.spotify.com/">
+						<i class="fa-brands fa-spotify"></i>
+					</a>
+					<a href="https://soundcloud.com/">
+						<i class="fa-brands fa-soundcloud"></i>
+					</a>
+					<a href="https://music.apple.com/us/browse">
+						<i class="fa-brands fa-apple"></i>
+					</a>
+				</div>
+			</div> -->
+
+		</section>
+
+		<section class="podcast-list">
+			<div id="page-1" >
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex" >
+						<div class="podcast-item-new">new</div>
+						<div class="podcast-item-category podcast-item-category__new">
+							Business
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						6 - A digital detox podcast
+					</div>
+					<div class="podcast-item-text">
+						Listen to the podcast about doing a digital detox to practise and improve your listening skills.<br>
+						Do the preparation task first. Then listen to the audio and do the exercises.
+
+					</div>
+					<a href='digital-detox-podcast.html' class="podcast-item-btn">
+						<i class="fa-solid fa-play" onclick="event.preventDefault(); document.querySelector('audio').play()"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex">
+						<div class="podcast-item-new">new</div>
+						<div class="podcast-item-category podcast-item-category__new">
+							Business
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						5 - Writing home
+					</div>
+					<div class="podcast-item-text">
+						Welcome to our audio fiction series, Writing home! In this first episode Milton meets his new neighbour Mei. What do you think he asks her?
+					</div>
+					<a href='https://learnenglish.britishcouncil.org/general-english/audio-series/writing-home/episode-01' class="podcast-item-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex">
+						<!-- <div class="podcast-item-new">new</div> -->
+						<div class="podcast-item-category podcast-item-category__new">
+							Travel
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						4 - Big City Small World
+					</div>
+					<div class="podcast-item-text">
+						Do you enjoy listening to audio fiction?<br>
+						In this section, listen to our audio fiction series for learners at B1 English level (intermediate) about a group of people from around the world who are living in London.<br>
+						You will improve your listening comprehension and develop your vocabulary. Each recording has a transcript and interactive exercises to help you understand and use the language.
+					</div>
+					<a href='https://learnenglish.britishcouncil.org/general-english/big-city-small-world/series-1' class="podcast-item-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+			</div>
+
+
+			<!-- page 2 -->
+			<div id="page-2" class='hide' data-aos="zoom-in">
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex">
+						<!-- <div class="podcast-item-new">new</div> -->
+						<div class="podcast-item-category podcast-item-category__new">
+							Travel
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						3 - A study trip to the UK
+					</div>
+					<div class="podcast-item-text">
+						Listen to Ella talking about some of the most memorable moments from a study trip to the UK.
+					</div>
+					<a href='https://learnenglish.britishcouncil.org/general-english/audio-zone/study-trip-uk' class="podcast-item-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex">
+						<!-- <div class="podcast-item-new">new</div> -->
+						<div class="podcast-item-category podcast-item-category__new">
+							Psychology
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						2 - Beating stress
+					</div>
+					<div class="podcast-item-text">
+						Listen to Emily talking about the importance of managing her stress levels and the techniques she uses.
+					</div>
+					<a href='https://learnenglish.britishcouncil.org/general-english/audio-zone/beating-stress' class="podcast-item-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+
+				<div class="podcast-item" data-aos="zoom-in">
+					<div class="podcast-item-header d-flex">
+						<div class="podcast-item-category podcast-item-category__new">
+							Sport
+						</div>
+						|
+						<div class="podcast-item-date">
+							Jan 18, 2023
+						</div>
+					</div>
+					<div class="podcast-item-title">
+						1 - Coventry City F.C.
+					</div>
+					<div class="podcast-item-text">
+						Listen to Neil talking about Coventry City Football Club and why he's a loyal supporter.
+					</div>
+					<a href='https://learnenglish.britishcouncil.org/general-english/audio-zone/coventry-city-fc' class="podcast-item-btn">
+						<i class="fa-solid fa-play"></i>
+						<span>Episode page</span>
+					</a>
+				</div>
+
+			</div>
+
+			<div class="pagination">
+
+				<div id='pag1' class="pagination-item d-flex">1</div>
+				<div id='pag2' class="pagination-item d-flex">2</div>
+				<div class="pagination-item d-flex inactive">...</div>
+				<div class="pagination-chevron d-flex inactive">
+					<i class="fa-solid fa-chevron-right"></i>
+				</div>
+			</div>
+
+			<div class="load hide">
+			  <hr/><hr/><hr/><hr/>
+			</div>
+		</section>
+
+		<section class="team">
+			<div class="section-title">Team</div>
+			<div class="team-row d-flex">
+				<div class="team-card" data-aos="fade-right">
+					<div class="team-card-img">
+						<img src="images/team-1.jpg" alt="team">
+					</div>
+					<div class="team-card-content">
+						<div class="team-card-position">
+							Position
+						</div>
+						<div class="team-card-name">
+							Aida Cave
+						</div>
+						<div class="team-card-social">
+							<a href="https://www.linkedin.com/">
+								<i class="fa-brands fa-linkedin-in"></i>
+							</a>
+							<a href="https://www.github.com/">
+								<i class="fa-brands fa-github"></i>
+						 	</a >
+						 	<a href="https://www.twitter.com/">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="team-card" data-aos="fade-left">
+					<div class="team-card-img">
+						<img src="images/team-2.jpg" alt="team">
+					</div>
+					<div class="team-card-content">
+						<div class="team-card-position">
+							Position
+						</div>
+						<div class="team-card-name">
+							Nick Carleton
+						</div>
+						<div class="team-card-social">
+							<a href="https://www.linkedin.com/">
+								<i class="fa-brands fa-linkedin-in"></i>
+							</a>
+							<a href="https://www.github.com/">
+								<i class="fa-brands fa-github"></i>
+						 	</a >
+						 	<a href="https://www.twitter.com/">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="posts">
+			<div class="section-title">Latest Posts</div>
+
+			<div id="postList"></div>
+
+			<a href="#" class="my-btn episode-btn">
+				<span>View Blog</span>
+				<i class="fa-solid fa-chevron-right"></i>
+			</a>
+		</section>
+
+		<footer>
+			<div class="footer-row">
+				<nav>
+					<ul class="footer-menu">
+						<li><a href="#">Episodes - 404</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="#">Contact - 404</a></li>
+						<li><a href="https://u24.gov.ua/uk">Donate</a></li>
+					</ul>
+				</nav>
+				<div class="footer-form">
+					<div class="footer-form-title">
+						Newsletter
+					</div>
+					<div class="footer-form-subtitle">
+						Sign up now; get closer to our action.
+					</div>
+					<form action="">
+						<input type="email" class='text-input' placeholder="Email adress...">
+						<button type="submit" class='submit-input'>
+							<i class="fa-solid fa-arrow-right"></i>
+						</button>
+					</form>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<span>&copy;2023 - ПІ-20-02, Євген Данилів</span>
+				<div class="copyright-social">
+					<a href="https://www.linkedin.com/">
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+					<a href="https://www.github.com/">
+						<i class="fa-brands fa-github"></i>
+				 	</a >
+				 	<a href="https://www.twitter.com/">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+	    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+	      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+	        
+	      	<div class="modal-title bold mb-20">
+	      		Love to hear your thoughts, fears & feelings...
+	      	</div>
+	      	<form action="#">
+	      		<label for="userName">Name*</label>
+	      		<input type="text" id='userName' placeholder="Enter your name" >
+	      		<label for="email">Email*</label>
+	      		<input type="email" id='email' placeholder="Enter your email">
+	      		<label for="msg">Message</label>
+	      		<textarea name="msg" id="msg" rows="10" placeholder="Enter your message"></textarea>
+
+	      		<input type='submit' class='submit-btn' id='submit' value='Submit'>
+	      	</form>
+	      	<button class="modal__close" aria-label="Close modal" data-micromodal-close><i class="fa-solid fa-xmark"></i></button>
+	      </div>
+	    </div>
+  	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src='scripts/script.js'></script>
+	<script src='scripts/posts.js'></script>
+	<script src='https://unpkg.com/micromodal/dist/micromodal.min.js'></script>
+	<script src='scripts/micromodal.js'></script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init();
+	  </script>
+	<script src='scripts/search.js'></script>
+</body>
+</html>
